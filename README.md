@@ -4,4 +4,4 @@ The primary mechanism by which online service providers communicate their data c
 
 ## 🔄 Architecture
 
-![alt text](/Images/architecture diagram 6120.png)
+![alt text](Images/architecture diagram 6120.png)
