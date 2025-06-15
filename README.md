@@ -72,3 +72,9 @@ Half-star rendering may not work consistently in some older browsers. Performanc
 
 ## Future Enhancements
 Add multi-language support for privacy policy analysis. Improve the accuracy of the AI model. Support for downloading analysis reports. Add a dark mode for the extension UI.
+
+## 📚 References
+- [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
+- [OPP-115 Dataset](https://www.usableprivacy.org/data)
+- [PPGDPR Dataset](https://arxiv.org/html/2503.10727v1)
+- [LaMA 3 Herd of Models (Meta, 2024)](https://arxiv.org/abs/2407.21783)
