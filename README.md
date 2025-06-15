@@ -100,7 +100,30 @@ In this project, we developed a structured prompt interface that assists in the 
 <p align="center">
 <img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Prompt%206120.png">
 </p>
-  ![Prompt Engineering Framework]()
+
+## Color Grading
+
+Color indicators for the Privacy Analyzer framework are coupled with a numerical score (ranging from 1 to 5) to objectively assess the level of data privacy and security. Each color is linked to a different score range, reflecting the worst to best severity of privacy risks and associated best practice:
+
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+
+| Green (4-5) | A green color is given to practices that score either 4 or 5, reflecting great privacy and few risks. The systems receiving this rating are found to be highly compliant with set regulations, very transparent, and with strict security measures to protect user data, such as encryption and authentication of users. Green signifies that privacy practices implemented provide a quality matching or surpassing users' expectations, hence guaranteeing adequate security against misuse or breach of data. Users can use green-rated systems with confidence, securely and responsibly handling their personal data. |
+Yellow (2-3): Practices scoring 2 or 3 receive a yellow indicator, which is midway and illustrates
+a medium privacy and security condition wherein basic protections might be in place but there are
+gaps or ambiguities in policies, user controls, or technical implementations. Users might be given
+incomplete choices to opt out of the collection and uses of their data, ambiguous data-sharing
+practices, or outdated protocols of security. The yellow color signifies those areas which work but
+need enhancement for better protection of data. It is an alert signal to make users carefully consider
+the linked privacy risks and perform appropriate actions, such as revising privacy settings or
+curtailing data disclosure.
+Red (0-1): The red indicator shall be assigned to practices that have scored 0 or 1, therefore
+signifying critical vulnerabilities and serious privacy risks. These systems usually lack
+transparency, mostly do not adhere to privacy regulations, and offer minimal or no user control.
+This would include data selling to third parties without user consent, unencrypted data storage, or
+a weak mechanism to respond to breaches. Clearly, red-rated practices are warnings of serious
+privacy issues. They are ver
 
 ## 📚 References
 - [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
