@@ -97,8 +97,10 @@ In this project, we developed a structured prompt interface that assists in the 
 | **Parameterized Schema** | It details the structure of the evaluation. It identifies categories such as Data Collection, Data Usage, and Policy Clarity, among others. For each category, the model is instructed to provide a numerical rating (e.g., out of 5) and a detailed explanation justifying the rating. This ensures clarity and uniformity in the model's output. |
 | **Aggregated Assessment** | It consolidates the individual evaluations into a single overall rating with an accompanying explanation. This step provides a high-level summary, making the output concise and actionable. Together, these components create a comprehensive and systematic framework to ensure the LLM produces meaningful and consistent results. |
 
-<img align="Center" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Prompt%206120.png">
-![Prompt Engineering Framework]()
+<p align="center">
+<img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Prompt%206120.png">
+</p>
+  ![Prompt Engineering Framework]()
 
 ## 📚 References
 - [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
