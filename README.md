@@ -111,10 +111,10 @@ Color indicators for the Privacy Analyzer framework are coupled with a numerical
 | <p align="center"><img src="https://placehold.co/15x15/FFD700/FFD700.png"></br>Yellow</br>(2-3)</p> | Practices scoring 2 or 3 receive a yellow indicator, which is midway and illustrates a medium privacy and security condition wherein basic protections might be in place but there are gaps or ambiguities in policies, user controls, or technical implementations. Users might be given incomplete choices to opt out of the collection and uses of their data, ambiguous data-sharing practices, or outdated protocols of security. The yellow color signifies those areas which work but need enhancement for better protection of data. It is an alert signal to make users carefully consider the linked privacy risks and perform appropriate actions, such as revising privacy settings or curtailing data disclosure. |
 | <p align="center"><img src="https://placehold.co/15x15/B22222/B22222.png"></br>Red</br>(0-1)</p> | The red indicator shall be assigned to practices that have scored 0 or 1, therefore signifying critical vulnerabilities and serious privacy risks. These systems usually lack transparency, mostly do not adhere to privacy regulations, and offer minimal or no user control. This would include data selling to third parties without user consent, unencrypted data storage, or a weak mechanism to respond to breaches. Clearly, red-rated practices are warnings of serious privacy issues. They are very dangerous and could hardly let users' data remain private; thus, users should use such systems with great caution and as little as possible. A red rating within an organization is a call to immediate remediation in order to implement secure protocols, increase compliance, and rebuild user trust. |
 
-### Comparison with PolicyGPT
-<p align="center"><img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61201.png"></br>Results of PrivacyIQ</br></p>
+### ⚔️ PrivacyIQ vs PolicyGPT
+<p align="center" width="200" height="100"><img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61201.png"></br>Results of PrivacyIQ</br></p>
 
-<p align="center"><img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61202.png"></br>Results of PolicyGPT</p>
+<p align="center" width="200" height="100"><img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61202.png"></br>Results of PolicyGPT</p>
 
 ## 📚 References
 - [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
