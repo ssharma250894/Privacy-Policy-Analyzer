@@ -22,3 +22,13 @@ The primary mechanism by which online service providers communicate their data c
 ## 🔄 Architecture
 
 ![alt text](https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/architecture%20diagram%206120.png)
+
+## 🔧 Technologies Used
+
+| Areas | Tech Stack |
+|----------|------------------|
+| Frontend | HTML, CSS, JavaScript (Chrome Extension APIs) |
+| Backend | Python Flask |
+| LLM Inference | LLaMA 3 via ollama and llama.cpp |
+| Prompt Design | Structured JSON directives for category-based ratings |
+| Dataset References | OPP-115, PPGDPR, PolicyGPT |
