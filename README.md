@@ -43,3 +43,14 @@ cd privacyIQ
 cd backend
 pip install -r requirements.txt
 ```
+## Install and Run Ollama + LLaMA 3
+Make sure you have Ollama installed locally.
+
+```bash  
+ollama run llama3
+```
+### Run Flask Server
+bash
+```bash 
+python app.py
+```
