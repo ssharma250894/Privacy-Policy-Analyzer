@@ -112,9 +112,9 @@ Color indicators for the Privacy Analyzer framework are coupled with a numerical
 | <p align="center"><img src="https://placehold.co/15x15/B22222/B22222.png"></br>Red</br>(0-1)</p> | The red indicator shall be assigned to practices that have scored 0 or 1, therefore signifying critical vulnerabilities and serious privacy risks. These systems usually lack transparency, mostly do not adhere to privacy regulations, and offer minimal or no user control. This would include data selling to third parties without user consent, unencrypted data storage, or a weak mechanism to respond to breaches. Clearly, red-rated practices are warnings of serious privacy issues. They are very dangerous and could hardly let users' data remain private; thus, users should use such systems with great caution and as little as possible. A red rating within an organization is a call to immediate remediation in order to implement secure protocols, increase compliance, and rebuild user trust. |
 
 ## ⚔️ PrivacyIQ vs PolicyGPT
-<p align="center"><img width="160" height="80" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61201.png"></br>Results of PrivacyIQ</br></p>
+<p align="center"><img width="300" height="150" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61201.png"></br>Results of PrivacyIQ</br></p>
 
-<p align="center"><img width="160" height="80" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61202.png"></br>Results of PolicyGPT</p>
+<p align="center"><img width="300" height="150" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/comp61202.png"></br>Results of PolicyGPT</p>
 
 ## 📚 References
 - [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
