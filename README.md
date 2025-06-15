@@ -21,7 +21,7 @@ The primary mechanism by which online service providers communicate their data c
 
 ## 🔄 Architecture
 
-![alt text](https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/architecture%20diagram%206120.png)
+![Architecture diagram](https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/architecture%20diagram%206120.png)
 
 ## 🔧 Technologies Used
 
@@ -88,6 +88,14 @@ Add multi-language support for privacy policy analysis. Improve the accuracy of 
 
 
 ## ✏️ Prompt Enginnering
+
+In this project, we developed a structured prompt interface that assists in the assessment of privacy policies. The schema has a well-defined structured JSON that helps the model in the stepwise evaluation of certain attributes which will improve the accuracy and comprehensiveness of the outcomes. All the parameters are analyzed separately, and emphasis placed on giving a score as well as justifying it. Prompt generation represents a structured Prompt Design framework created to guide a Language Learning Model (LLM) in performing evaluations. The framework is divided into three main components. 
+
+- The **Directive Schema** outlines the primary instructions, asking the model to produce a JSON-formatted output that includes ratings and explanations for specific parameters, along with an overall rating and explanation.
+- The second component, the **Parameterized Schema**, details the structure of the evaluation. It identifies categories such as Data Collection, Data Usage, and Policy Clarity, among others. For each category, the model is instructed to provide a numerical rating (e.g., out of 5) and a detailed explanation justifying the rating. This ensures clarity and uniformity in the model's output.
+- The final component, the Aggregated Assessment, consolidates the individual evaluations into a single overall rating with an accompanying explanation. This step provides a high-level summary, making the output concise and actionable. Together, these components create a comprehensive and systematic framework to ensure the LLM produces meaningful and consistent results.
+
+![Prompt Engineering Framework](https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/architecture%20diagram%206120.png)
 
 ## 📚 References
 - [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
