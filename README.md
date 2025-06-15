@@ -101,7 +101,7 @@ In this project, we developed a structured prompt interface that assists in the 
 <img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Prompt%206120.png">
 </p>
 
-## Color Grading
+## 🟢🟡🔴Color Grading
 
 Color indicators for the Privacy Analyzer framework are coupled with a numerical score (ranging from 1 to 5) to objectively assess the level of data privacy and security. Each color is linked to a different score range, reflecting the worst to best severity of privacy risks and associated best practice:
 
