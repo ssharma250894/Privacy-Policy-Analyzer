@@ -59,3 +59,16 @@ python app.py
 - Enable Developer Mode
 - Click Load unpacked
 - Select the extension/ directory
+
+## Usage
+- Open a website whose privacy policy you want to analyze.
+- Click on the Privacy Policy Analyzer extension icon in the toolbar.
+- Click the "Analyze" button to initiate the analysis.
+- View the overall rating as stars and a detailed breakdown in the table.
+- Use the "Proceed to Website" or "Go to Google Homepage" buttons for navigation.
+
+## Known Issues
+Half-star rendering may not work consistently in some older browsers. Performance may vary for websites with very long or complex privacy policies.
+
+## Future Enhancements
+Add multi-language support for privacy policy analysis. Improve the accuracy of the AI model. Support for downloading analysis reports. Add a dark mode for the extension UI.
