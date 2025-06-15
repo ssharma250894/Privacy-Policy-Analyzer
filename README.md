@@ -6,7 +6,15 @@ The primary mechanism by which online service providers communicate their data c
 
 - 🧩 Chrome Extension that detects and extracts privacy policies from websites.
 - 🤖 Local LLM (LLaMA 3) integrated using Ollama for fast, secure, offline processing.
-- 📊 Evaluates policies across **8 key categories**: Data Collection, Data Security, Data Usage, Data Sharing, Data Selling, Opt-Out Options, Data Deletion, Ease of Understanding
+- 📊 Evaluates policies across **8 key categories**:
+  - Data Collection
+  - Data Security
+  - Data Usage
+  - Data Sharing
+  - Data Selling
+  - Opt-Out Options
+  - Data Deletion
+  - Ease of Understanding
 - 🟢 Color-coded score (Red-Yellow-Green) for each category
 - 📁 JSON-based structured prompts for consistent model output
 - 🔒 Improves transparency and user privacy control
