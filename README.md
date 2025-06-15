@@ -73,6 +73,23 @@ Half-star rendering may not work consistently in some older browsers. Performanc
 ## 📈 Future Enhancements
 Add multi-language support for privacy policy analysis. Improve the accuracy of the AI model. Support for downloading analysis reports. Add a dark mode for the extension UI.
 
+##  🔍 Rationale for choosing and Categories
+
+| Categories | Reason to choose | What it evaluates |
+|------------|------------------|-------------------|
+| Data Collection | It is essential to know which kinds of data are sourced by a service when trying to gauge the privacy threats | This category assesses the amount and type of information including demographic, psychographic or technical data that is being collected. It assists users in determining what type of data is required and convenient to the service being offered. 
+||Data Security | It is very important to protect the gathered information from being breached and accessed by unauthorized personnel. | This category determines the policies and the methods that are adopted to protect information. It comprises the standards of access controls, encryption, and security certifications which assist users in comprehending how strong the service integrator’s security has been designed. |
+| Data Usage | How the data is collected, and how it is used explains the existing privacy threat and the service’s data protection compliance. | This perspective looks at the possibilities of which data collected may satisfy specific needs such as improving the service, tailoring it to a specific user, or advertising. It sheds light on whether the data usage is in accordance with user expectations and legal provisions. |
+| Data Sharing with Third Parties | Sharing data with third parties exposes even more privacy risks. | This category investigates user’s circumstances under which user data collected have been shared with external entities. It assists users to know who else has access to their data and the purpose in order to assess risk factors associated with third parties. |
+| Data Selling with Third Parties | This is because privacy-concerned users may find it hard to compromise with user data being sold. | This category assesses the extent to which user data may be sold to third parties and the circumstances in which this may be permitted. It uses a commercial viewpoint of data treatment practices, which the user dislikes. |
+| Opt-out Options | It's one of the fundamental privacy rights of users to be able to control their information. | This category evaluates the mechanisms available and ways users can opt-out and give their consent on the collection, utilization, and sharing of data. | It determines whether users are given the option to refuse or revoke the permission given, thereby increasing protection over personal information.|
+| Data Deletion | If a person does not control the right to delete information, then this information is not theirs in practical terms, and on theoretical, it only exists printed on a sheet of paper. | This category focuses on the existing policies and practices with regard to data deletion requests. It also measures the ability of users to wipe their data from the system, which is desirable in order to meet the EU’s General data protection regulations. |
+| Ease of Understanding | Users do not bother to read the privacy policies if they are lengthy and filled with technical details, thus the whole purpose of informed consent is lost. | This category assesses the comprehensibility,
+legibility and conciseness of the privacy policy. It ensures that the language of the document is simple enough for the average user and thus such a user will be able to make informed choices about the privacy of his or her personal data. |
+
+
+## ✏️ Prompt Enginnering
+
 ## 📚 References
 - [PolicyGPT Paper (2023)](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2309.10238)
 - [OPP-115 Dataset](https://www.usableprivacy.org/data)
