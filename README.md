@@ -105,7 +105,7 @@ In this project, we developed a structured prompt interface that assists in the 
 
 Color indicators for the Privacy Analyzer framework are coupled with a numerical score (ranging from 1 to 5) to objectively assess the level of data privacy and security. Each color is linked to a different score range, reflecting the worst to best severity of privacy risks and associated best practice:
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#006400](https://placehold.co/15x15/#006400/006400.png) `006400`
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
 - ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
 
