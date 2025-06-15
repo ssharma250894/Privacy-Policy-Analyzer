@@ -32,3 +32,14 @@ The primary mechanism by which online service providers communicate their data c
 | LLM Inference | LLaMA 3 via ollama and llama.cpp |
 | Prompt Design | Structured JSON directives for category-based ratings |
 | Dataset References | OPP-115, PPGDPR, PolicyGPT |
+ 
+### 🚀 How to Run
+```bash  
+# Clone repository  
+git clone   
+cd privacyIQ  
+
+# Install Dependencies for Flask Server  
+cd backend
+pip install -r requirements.txt
+```
