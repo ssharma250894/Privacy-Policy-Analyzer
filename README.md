@@ -50,7 +50,12 @@ Make sure you have Ollama installed locally.
 ollama run llama3
 ```
 ### Run Flask Server
-bash
 ```bash 
 python app.py
 ```
+
+### Load the Extension in Chrome
+- Go to chrome://extensions/
+- Enable Developer Mode
+- Click Load unpacked
+- Select the extension/ directory
