@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Privacy Policy Analyzer",
+    "name": "PrivacyIQ",
     "version": "1.0",
-    "description": "Analyzes and scores website privacy policies using AI.",
+    "description": "This project is a Google Chrome extension designed to analyze privacy policies in real-time using a locally hosted Large Language Model (LLM). The extension aims to empower users by providing clear, concise summaries and privacy ratings of website policies, enabling more informed consent decisions.",
     "permissions": ["activeTab","webNavigation","scripting", "tabs"],
     "host_permissions": ["<all_urls>"],
     "action": {
