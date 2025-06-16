@@ -25,7 +25,7 @@ The primary mechanism by which online service providers communicate their data c
 
 ## 🔧 Technologies Used
 
-<p align="center">
+
 | Areas | Tech Stack |
 |----------|------------------|
 | Frontend | HTML, CSS, JavaScript (Chrome Extension APIs) |
@@ -33,7 +33,7 @@ The primary mechanism by which online service providers communicate their data c
 | LLM Inference | LLaMA 3 via ollama and llama.cpp |
 | Prompt Design | Structured JSON directives for category-based ratings |
 | Dataset References | OPP-115, PPGDPR, PolicyGPT |
-</p>
+
  
 ## 🚀 How to Run
 ```bash  
