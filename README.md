@@ -70,7 +70,13 @@ python app.py
 - Use the "Proceed to Website" or "Go to Google Homepage" buttons for navigation.
 
 ## ⚠️ Known Issues
-Half-star rendering may not work consistently in some older browsers. Performance may vary for websites with very long or complex privacy policies.
+
+- ⭐ Half-star rendering may not work consistently in some older browsers.
+- 🐢 Performance may vary for websites with very long or complex privacy policies.
+- 🔍 In some cases, the extension may not be able to detect or locate the privacy policy page, especially if:
+  - The policy is dynamically loaded (e.g., via JavaScript)
+  - The link is embedded deep in a non-standard location
+  - The site uses non-standard naming (e.g., "Data Use" instead of "Privacy Policy")
 
 ## 📈 Future Enhancements
 Add multi-language support for privacy policy analysis. Improve the accuracy of the AI model. Support for downloading analysis reports. Add a dark mode for the extension UI.
