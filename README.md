@@ -21,7 +21,7 @@ The primary mechanism by which online service providers communicate their data c
 
 ## 🔄 Architecture
 
-<p align="center"><img width="600" height="300" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/architecture%20diagram%206120.png"></p>
+<p align="center"><img width="600" height="400" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/architecture%20diagram%206120.png"></p>
 
 ## 🔧 Technologies Used
 
