@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 ▶️ Step 3: Run the Flask server
 ```bash 
-python app.py
+python main.py
 ```
 
 ##  🛠️ Load the Extension in Chrome
