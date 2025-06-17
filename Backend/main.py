@@ -5,19 +5,25 @@ import json
 import logging
 import re
 
+# Set up logging
 logging.basicConfig(level=logging.INFO)
 
+# Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS to allow requests from your Chrome extension
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB limit
+CORS(app)  # Enable CORS for Chrome Extension
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # Limit uploads to 16MB
+
 
 def extract_json_from_text(text):
-    # Use a regular expression to extract JSON data from the output
-    match = re.search(r'{.*}', text, re.DOTALL)
+    """
+    Extract the first valid JSON object from a string, even if other text is present.
+    """
+    match = re.search(r'{[\s\S]+}', text)
     if match:
         try:
             return json.loads(match.group(0))
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
+            logging.error(f"JSON Decode Error: {e}")
             return None
     return None
 
@@ -66,7 +72,7 @@ def analyze_with_ollama(policy_text):
     }
     """
 
-    # Combine the prompt with the policy text
+        # Combine the prompt with the policy text
     full_text = prompt + "\n" + policy_text
 
     # Run the command to analyze with Ollama
@@ -74,7 +80,8 @@ def analyze_with_ollama(policy_text):
         ["ollama", "run", "llama3"],
         input=full_text,
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8'  # Fix UnicodeDecodeError
     )
 
     # Log the full output from Ollama for debugging
@@ -87,78 +94,83 @@ def analyze_with_ollama(policy_text):
 
     # Attempt to extract and parse the JSON response
     analysis = extract_json_from_text(result.stdout)
-    if analysis:
-        # Restructure the data to make it clearer
-        structured_response = {
-            "ratings": [
-                {
-                    "parameter": "Data Collection",
-                    "rating": analysis["ratings"]["Data Collection"]["rating"],
-                    "explanation": analysis["ratings"]["Data Collection"]["explanation"]
-                },
-                {
-                    "parameter": "Data Usage",
-                    "rating": analysis["ratings"]["Data Usage"]["rating"],
-                    "explanation": analysis["ratings"]["Data Usage"]["explanation"]
-                },
-                {
-                    "parameter": "Data Sharing with Third Parties",
-                    "rating": analysis["ratings"]["Data Sharing with Third Parties"]["rating"],
-                    "explanation": analysis["ratings"]["Data Sharing with Third Parties"]["explanation"]
-                },
-                {
-                    "parameter": "Data Selling to Third Parties",
-                    "rating": analysis["ratings"]["Data Selling to Third Parties"]["rating"],
-                    "explanation": analysis["ratings"]["Data Selling to Third Parties"]["explanation"]
-                },
-                {
-                    "parameter": "Opt-Out Options for Data Sharing",
-                    "rating": analysis["ratings"]["Opt-Out Options for Data Sharing"]["rating"],
-                    "explanation": analysis["ratings"]["Opt-Out Options for Data Sharing"]["explanation"]
-                },
-                {
-                    "parameter": "Data Security",
-                    "rating": analysis["ratings"]["Data Security"]["rating"],
-                    "explanation": analysis["ratings"]["Data Security"]["explanation"]
-                },
-                {
-                    "parameter": "Data Deletion",
-                    "rating": analysis["ratings"]["Data Deletion"]["rating"],
-                    "explanation": analysis["ratings"]["Data Deletion"]["explanation"]
-                },
-                {
-                    "parameter": "Policy Clarity",
-                    "rating": analysis["ratings"]["Policy Clarity"]["rating"],
-                    "explanation": analysis["ratings"]["Policy Clarity"]["explanation"]
+    if analysis and "ratings" in analysis:
+        try:
+            # Restructure the data to make it clearer
+            structured_response = {
+                "ratings": [
+                    {
+                        "parameter": "Data Collection",
+                        "rating": analysis["ratings"]["Data Collection"]["rating"],
+                        "explanation": analysis["ratings"]["Data Collection"]["explanation"]
+                    },
+                    {
+                        "parameter": "Data Usage",
+                        "rating": analysis["ratings"]["Data Usage"]["rating"],
+                        "explanation": analysis["ratings"]["Data Usage"]["explanation"]
+                    },
+                    {
+                        "parameter": "Data Sharing with Third Parties",
+                        "rating": analysis["ratings"]["Data Sharing with Third Parties"]["rating"],
+                        "explanation": analysis["ratings"]["Data Sharing with Third Parties"]["explanation"]
+                    },
+                    {
+                        "parameter": "Data Selling to Third Parties",
+                        "rating": analysis["ratings"]["Data Selling to Third Parties"]["rating"],
+                        "explanation": analysis["ratings"]["Data Selling to Third Parties"]["explanation"]
+                    },
+                    {
+                        "parameter": "Opt-Out Options for Data Sharing",
+                        "rating": analysis["ratings"]["Opt-Out Options for Data Sharing"]["rating"],
+                        "explanation": analysis["ratings"]["Opt-Out Options for Data Sharing"]["explanation"]
+                    },
+                    {
+                        "parameter": "Data Security",
+                        "rating": analysis["ratings"]["Data Security"]["rating"],
+                        "explanation": analysis["ratings"]["Data Security"]["explanation"]
+                    },
+                    {
+                        "parameter": "Data Deletion",
+                        "rating": analysis["ratings"]["Data Deletion"]["rating"],
+                        "explanation": analysis["ratings"]["Data Deletion"]["explanation"]
+                    },
+                    {
+                        "parameter": "Policy Clarity",
+                        "rating": analysis["ratings"]["Policy Clarity"]["rating"],
+                        "explanation": analysis["ratings"]["Policy Clarity"]["explanation"]
+                    }
+                ],
+                "final_rating": {
+                    "rating": analysis["final_rating"]["rating"],
+                    "explanation": analysis["final_rating"]["explanation"]
                 }
-            ],
-            "final_rating": {
-                "rating": analysis["final_rating"]["rating"],
-                "explanation": analysis["final_rating"]["explanation"]
             }
-        }
-        return structured_response
+            return structured_response
+        except KeyError as e:
+            logging.error(f"Missing key in response: {e}")
+            return {"error": f"Missing key in response: {e}"}
 
     # If JSON extraction fails, log an error
     logging.error(f"Unexpected non-JSON output from Ollama: {result.stdout}")
     return {"error": "Failed to parse JSON output from Ollama"}
+
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
     data = request.get_json()
     policy_text = data.get("policy_text", "")
 
-    if not policy_text:
+    if not policy_text.strip():
         return jsonify({"error": "No policy text provided"}), 400
 
     result = analyze_with_ollama(policy_text)
 
-    # Check if there was an error in the analysis
     if "error" in result:
         return jsonify(result), 500
 
     logging.info(f"Backend response: {result}")
     return jsonify(result)
+
 
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
