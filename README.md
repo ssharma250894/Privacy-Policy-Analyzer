@@ -96,8 +96,8 @@ python main.py
 ## 🏁 PrivacyIQ in Action
 
 <p align="center">
-  <a href="https://youtu.be/9AQUCVicvug" target="_blank">
-    <img width="400" height="250" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Thumbnail.png" alt="Watch PrivacyIQ in action">
+  <a href="https://youtu.be/9AQUCVicvug" target="_blank" rel="noopener noreferrer">
+    <img width="400" height="250" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Thumbnail.png?raw=true" alt="Watch PrivacyIQ in action">
   </a>
 </p>
 
