@@ -34,6 +34,70 @@ The primary mechanism by which online service providers communicate their data c
 | Prompt Design | Structured JSON directives for category-based ratings |
 | Dataset References | OPP-115, PPGDPR, PolicyGPT |
 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .center-table {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 800px;
+      text-align: left;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px 16px;
+    }
+
+    th {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="center-table">
+  <table>
+    <tr>
+      <th>Areas</th>
+      <th>Tech Stack</th>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>HTML, CSS, JavaScript (Chrome Extension APIs)</td>
+    </tr>
+    <tr>
+      <td>Backend</td>
+      <td>Python Flask</td>
+    </tr>
+    <tr>
+      <td>LLM Inference</td>
+      <td>LLaMA 3 via ollama and llama.cpp</td>
+    </tr>
+    <tr>
+      <td>Prompt Design</td>
+      <td>Structured JSON directives for category-based ratings</td>
+    </tr>
+    <tr>
+      <td>Dataset References</td>
+      <td>OPP-115, PPGDPR, PolicyGPT</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
+
+
  
 ## 🚀 How to Run
 ```bash  
