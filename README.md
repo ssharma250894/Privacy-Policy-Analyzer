@@ -72,9 +72,11 @@ python app.py
 ## 🏁 PrivacyIQ In Action
 
 <p align="center">
-[![Watch PrivacyIQ in action](https://img.youtube.com/vi/9AQUCVicvug/0.jpg)](https://youtu.be/9AQUCVicvug)
-Watch PrivacyIQ in action
+  <a href="https://youtu.be/9AQUCVicvug" target="_blank">
+    <img src="https://img.youtube.com/vi/9AQUCVicvug/0.jpg" alt="Watch PrivacyIQ in action">
+  </a>
 </p>
+
 
 ## ⚠️ Known Issues
 
