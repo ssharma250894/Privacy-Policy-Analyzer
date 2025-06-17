@@ -55,6 +55,27 @@ Make sure you have Ollama installed locally.
 ollama run llama3
 ```
 ## 🚀 Run Flask Server
+
+🔧 Step 1: Create and activate a virtual environment
+```bash 
+# Create virtual environment
+python -m venv venv
+
+# Activate (use the command below based on your OS)
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+📦 Step 2: Install dependencies
+```bash 
+pip install -r requirements.txt
+# Make sure your requirements.txt contains flask and any other dependencies your app needs.
+```
+
+▶️ Step 3: Run the Flask server
 ```bash 
 python app.py
 ```
