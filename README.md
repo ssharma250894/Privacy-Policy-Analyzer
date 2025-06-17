@@ -69,9 +69,12 @@ python app.py
 - View the overall rating as stars and a detailed breakdown in the table.
 - Use the "Proceed to Website" or "Go to Google Homepage" buttons for navigation.
 
-## 🏁 In Action
+## 🏁 PrivacyIQ In Action
 
-[![Watch PrivacyIQ in action](https://img.youtube.com/vi/9AQUCVicvug/0.jpg)](https://youtu.be/9AQUCVicvug))
+<p align="center">
+[![Watch PrivacyIQ in action](https://img.youtube.com/vi/9AQUCVicvug/0.jpg)](https://youtu.be/9AQUCVicvug)
+Watch PrivacyIQ in action
+</p>
 
 ## ⚠️ Known Issues
 
