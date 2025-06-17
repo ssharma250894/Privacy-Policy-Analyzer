@@ -97,7 +97,7 @@ python app.py
 
 <p align="center">
   <a href="https://youtu.be/9AQUCVicvug" target="_blank">
-    <img src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Thumbnail.png" alt="Watch PrivacyIQ in action">
+    <img width="400" height="200" src="https://github.com/ssharma250894/PrivacyIQ/blob/main/Images/Thumbnail.png" alt="Watch PrivacyIQ in action">
   </a>
 </p>
 
