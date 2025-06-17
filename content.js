@@ -28,7 +28,7 @@ function createPrivacyAnalyzerModal() {
   modal.style.maxHeight = "80vh";
 
   const title = document.createElement("h2");
-  title.textContent = "Privacy Analyzer";
+  title.textContent = "PolicyIQ";
   title.style.marginBottom = "10px";
   title.style.fontSize = "1.5rem";
   title.style.color = "#2c3e50";
